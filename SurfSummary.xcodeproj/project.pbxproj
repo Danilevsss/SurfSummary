@@ -13,6 +13,13 @@
 		5E7AC8CD2A78EEDD00251372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8CB2A78EEDD00251372 /* Main.storyboard */; };
 		5E7AC8CF2A78EEDE00251372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8CE2A78EEDE00251372 /* Assets.xcassets */; };
 		5E7AC8D22A78EEDE00251372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8D02A78EEDE00251372 /* LaunchScreen.storyboard */; };
+		5E7AC8DB2A78F26E00251372 /* CollectionReusableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AC8D92A78F26E00251372 /* CollectionReusableViewHeader.swift */; };
+		5E7AC8DC2A78F26E00251372 /* CollectionReusableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8DA2A78F26E00251372 /* CollectionReusableViewHeader.xib */; };
+		5E7AC8DF2A7909B500251372 /* CollectionReusableViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AC8DD2A7909B500251372 /* CollectionReusableViewFooter.swift */; };
+		5E7AC8E02A7909B500251372 /* CollectionReusableViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8DE2A7909B500251372 /* CollectionReusableViewFooter.xib */; };
+		5E7AC8E62A790C9600251372 /* CollectionViewSkillCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AC8E42A790C9600251372 /* CollectionViewSkillCell.swift */; };
+		5E7AC8E72A790C9600251372 /* CollectionViewSkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E7AC8E52A790C9600251372 /* CollectionViewSkillCell.xib */; };
+		5E7AC8E92A790FE300251372 /* SkillFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AC8E82A790FE300251372 /* SkillFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		5E7AC8CE2A78EEDE00251372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7AC8D12A78EEDE00251372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E7AC8D32A78EEDE00251372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7AC8D92A78F26E00251372 /* CollectionReusableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableViewHeader.swift; sourceTree = "<group>"; };
+		5E7AC8DA2A78F26E00251372 /* CollectionReusableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableViewHeader.xib; sourceTree = "<group>"; };
+		5E7AC8DD2A7909B500251372 /* CollectionReusableViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableViewFooter.swift; sourceTree = "<group>"; };
+		5E7AC8DE2A7909B500251372 /* CollectionReusableViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionReusableViewFooter.xib; sourceTree = "<group>"; };
+		5E7AC8E42A790C9600251372 /* CollectionViewSkillCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSkillCell.swift; sourceTree = "<group>"; };
+		5E7AC8E52A790C9600251372 /* CollectionViewSkillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewSkillCell.xib; sourceTree = "<group>"; };
+		5E7AC8E82A790FE300251372 /* SkillFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		5E7AC8C42A78EEDD00251372 /* SurfSummary */ = {
 			isa = PBXGroup;
 			children = (
+				5E7AC8E32A790C4B00251372 /* SkillCell */,
+				5E7AC8E22A7909D000251372 /* Footer */,
+				5E7AC8E12A7909BB00251372 /* Header */,
 				5E7AC8C52A78EEDD00251372 /* AppDelegate.swift */,
 				5E7AC8C72A78EEDD00251372 /* SceneDelegate.swift */,
 				5E7AC8C92A78EEDD00251372 /* ViewController.swift */,
@@ -63,8 +80,36 @@
 				5E7AC8CE2A78EEDE00251372 /* Assets.xcassets */,
 				5E7AC8D02A78EEDE00251372 /* LaunchScreen.storyboard */,
 				5E7AC8D32A78EEDE00251372 /* Info.plist */,
+				5E7AC8E82A790FE300251372 /* SkillFlowLayout.swift */,
 			);
 			path = SurfSummary;
+			sourceTree = "<group>";
+		};
+		5E7AC8E12A7909BB00251372 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				5E7AC8D92A78F26E00251372 /* CollectionReusableViewHeader.swift */,
+				5E7AC8DA2A78F26E00251372 /* CollectionReusableViewHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		5E7AC8E22A7909D000251372 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				5E7AC8DD2A7909B500251372 /* CollectionReusableViewFooter.swift */,
+				5E7AC8DE2A7909B500251372 /* CollectionReusableViewFooter.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		5E7AC8E32A790C4B00251372 /* SkillCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E7AC8E42A790C9600251372 /* CollectionViewSkillCell.swift */,
+				5E7AC8E52A790C9600251372 /* CollectionViewSkillCell.xib */,
+			);
+			path = SkillCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7AC8DC2A78F26E00251372 /* CollectionReusableViewHeader.xib in Resources */,
+				5E7AC8E02A7909B500251372 /* CollectionReusableViewFooter.xib in Resources */,
+				5E7AC8E72A790C9600251372 /* CollectionViewSkillCell.xib in Resources */,
 				5E7AC8D22A78EEDE00251372 /* LaunchScreen.storyboard in Resources */,
 				5E7AC8CF2A78EEDE00251372 /* Assets.xcassets in Resources */,
 				5E7AC8CD2A78EEDD00251372 /* Main.storyboard in Resources */,
@@ -138,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7AC8E62A790C9600251372 /* CollectionViewSkillCell.swift in Sources */,
+				5E7AC8DB2A78F26E00251372 /* CollectionReusableViewHeader.swift in Sources */,
 				5E7AC8CA2A78EEDD00251372 /* ViewController.swift in Sources */,
+				5E7AC8DF2A7909B500251372 /* CollectionReusableViewFooter.swift in Sources */,
 				5E7AC8C62A78EEDD00251372 /* AppDelegate.swift in Sources */,
+				5E7AC8E92A790FE300251372 /* SkillFlowLayout.swift in Sources */,
 				5E7AC8C82A78EEDD00251372 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

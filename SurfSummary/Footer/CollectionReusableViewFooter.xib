@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="reusableViewFooter" reuseIdentifier="reusableViewFooter" translatesAutoresizingMaskIntoConstraints="NO" id="U6b-Vx-4bR" customClass="CollectionReusableViewFooter" customModule="SurfSummary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="179"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5u3-yY-9ob">
+                    <rect key="frame" x="0.0" y="0.0" width="419" height="179"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="65J-ht-vRM">
+                            <rect key="frame" x="16" y="16" width="387" height="61"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О себе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2H-2K-UrJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="387" height="19.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experienced software engineer skilled in developing scalable and maintainable systems" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-rC-E3f">
+                                    <rect key="frame" x="0.0" y="27.333333333333339" width="387" height="33.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="65J-ht-vRM" firstAttribute="top" secondItem="5u3-yY-9ob" secondAttribute="top" constant="16" id="KU7-qm-eAM"/>
+                        <constraint firstAttribute="trailing" secondItem="65J-ht-vRM" secondAttribute="trailing" constant="16" id="MSl-YL-xhb"/>
+                        <constraint firstItem="65J-ht-vRM" firstAttribute="leading" secondItem="5u3-yY-9ob" secondAttribute="leading" constant="16" id="urX-Xh-cdU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="5u3-yY-9ob" secondAttribute="trailing" id="5vL-rJ-Vf7"/>
+                <constraint firstAttribute="bottom" secondItem="5u3-yY-9ob" secondAttribute="bottom" id="Kna-RT-Rtw"/>
+                <constraint firstItem="5u3-yY-9ob" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="cXh-Yw-OTQ"/>
+                <constraint firstItem="5u3-yY-9ob" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="k6Q-Ez-7vI"/>
+            </constraints>
+            <connections>
+                <outlet property="mainStackView" destination="65J-ht-vRM" id="7K2-yt-scU"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="65.140845070422543"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
